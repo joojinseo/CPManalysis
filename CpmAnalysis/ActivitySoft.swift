@@ -249,13 +249,17 @@ class Project {
         
         criticalPathFind(activities: activities, criticalActivities: criticalActivities)
         result.append("Critical Paths \n")
+        var countnumber: Int32 = 0
         for criticalPath in criticalPaths {
             for activity in criticalPath {
                 result.append("\(activity.id) ")
             }
-             result.append("\n")
+            result.append("\n")
+            countnumber = countnumber+1
+            
         }
         result.append("\n")
+        result.append("Number of Critical Path : \(countnumber)\n")
         
     }
     
