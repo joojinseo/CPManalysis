@@ -222,10 +222,12 @@ class Project {
 
             if (activity.actualFinish != 0) {
                 result.append("ID = \(activity.id): \(activity.description)\n" )
+                result.append("Duration: \(activity.duration)\n")
                 result.append("Actual Start: \(activity.actualStart)\n")
                 result.append("Actual Finish: \(activity.actualFinish)\n")
             } else if (activity.actualStart != 0) {
                 result.append("ID = \(activity.id): \(activity.description)\n" )
+                result.append("Duration: \(activity.duration)\n")
                 result.append("Actual Start: \(activity.actualStart)\n")
                 result.append("Early Finish: \(activity.earlyFinish)\n")
                 result.append("Late Finish: \(activity.lateFinish)\n")
@@ -233,6 +235,7 @@ class Project {
                 result.append("Free Float: \(activity.freeFloat)\n")
             } else {
                 result.append("ID = \(activity.id): \(activity.description)\n" )
+                result.append("Duration: \(activity.duration)\n")
                 result.append("Early Start: \(activity.earlyStart)\n")
                 result.append("Early Finish: \(activity.earlyFinish)\n")
                 result.append("Late Start: \(activity.lateStart)\n")
